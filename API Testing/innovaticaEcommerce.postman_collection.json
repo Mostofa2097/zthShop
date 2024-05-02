@@ -1,0 +1,647 @@
+{
+	"info": {
+		"_postman_id": "eeddf3aa-f5ff-4a4f-89eb-3f4d826b1c59",
+		"name": "innovaticaEcommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33581539"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"kamall\",\r\n    \"email\": \"kamall@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://nihashopbd.pythonanywhere.com/api/users/register",
+							"protocol": "https",
+							"host": [
+								"nihashopbd",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"mostofa@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://nihashopbd.pythonanywhere.com/api/users/login",
+							"protocol": "https",
+							"host": [
+								"nihashopbd",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registrationError",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Md.\",\r\n    \"email\": \"mostofa@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://nihashopbd.pythonanywhere.com/api/users/register",
+							"protocol": "https",
+							"host": [
+								"nihashopbd",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginError",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"mostofa@gmail.com\",\r\n    \"password\": \"12342332\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://nihashopbd.pythonanywhere.com/api/users/login",
+							"protocol": "https",
+							"host": [
+								"nihashopbd",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "productListPages",
+					"item": [
+						{
+							"name": "pageNo1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"searchText\": \"\",\r\n    \"page\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://nihashopbd.pythonanywhere.com/api/products/",
+									"protocol": "https",
+									"host": [
+										"nihashopbd",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"api",
+										"products",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pageNo2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"searchText\": \"\",\r\n    \"page\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://nihashopbd.pythonanywhere.com/api/products/",
+									"protocol": "https",
+									"host": [
+										"nihashopbd",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"api",
+										"products",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pageNo3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"searchText\": \"\",\r\n    \"page\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://nihashopbd.pythonanywhere.com/api/products/",
+									"protocol": "https",
+									"host": [
+										"nihashopbd",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"api",
+										"products",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "productList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"searchText\": \"Nahid\",\r\n    \"page\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://nihashopbd.pythonanywhere.com/api/products/",
+							"protocol": "https",
+							"host": [
+								"nihashopbd",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductDetails",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0Mzk0MDMwLCJpYXQiOjE3MTM5NjIwMzAsImp0aSI6ImUzOWQ0NDRhNmMxMDQyMTZhNTVjNjM3NzAwY2Q2OTMwIiwidXNlcl9pZCI6Mzh9.Sdgz7ivVAm2NiGP1NPf8mg0xpmmKQOaJx3JAoVx9bIk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://nihashopbd.pythonanywhere.com/api/products/72",
+							"protocol": "https",
+							"host": [
+								"nihashopbd",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"72"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AddToCart",
+			"item": [
+				{
+					"name": "addtocart",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0Mzk0MDMwLCJpYXQiOjE3MTM5NjIwMzAsImp0aSI6ImUzOWQ0NDRhNmMxMDQyMTZhNTVjNjM3NzAwY2Q2OTMwIiwidXNlcl9pZCI6Mzh9.Sdgz7ivVAm2NiGP1NPf8mg0xpmmKQOaJx3JAoVx9bIk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://nihashopbd.pythonanywhere.com/api/products/67",
+							"protocol": "https",
+							"host": [
+								"nihashopbd",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"67"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MyOrder",
+			"item": [
+				{
+					"name": "Orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0Mzk0MDMwLCJpYXQiOjE3MTM5NjIwMzAsImp0aSI6ImUzOWQ0NDRhNmMxMDQyMTZhNTVjNjM3NzAwY2Q2OTMwIiwidXNlcl9pZCI6Mzh9.Sdgz7ivVAm2NiGP1NPf8mg0xpmmKQOaJx3JAoVx9bIk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://nihashopbd.pythonanywhere.com/api/orders/my/orders/",
+							"protocol": "https",
+							"host": [
+								"nihashopbd",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"orders",
+								"my",
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OrderDetails",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0Mzk0MDMwLCJpYXQiOjE3MTM5NjIwMzAsImp0aSI6ImUzOWQ0NDRhNmMxMDQyMTZhNTVjNjM3NzAwY2Q2OTMwIiwidXNlcl9pZCI6Mzh9.Sdgz7ivVAm2NiGP1NPf8mg0xpmmKQOaJx3JAoVx9bIk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://nihashopbd.pythonanywhere.com/api/orders/109/",
+							"protocol": "https",
+							"host": [
+								"nihashopbd",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"orders",
+								"109",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payment",
+			"item": [
+				{
+					"name": "Paypal",
+					"item": [
+						{
+							"name": "Pay",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0Mzk0MDMwLCJpYXQiOjE3MTM5NjIwMzAsImp0aSI6ImUzOWQ0NDRhNmMxMDQyMTZhNTVjNjM3NzAwY2Q2OTMwIiwidXNlcl9pZCI6Mzh9.Sdgz7ivVAm2NiGP1NPf8mg0xpmmKQOaJx3JAoVx9bIk",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"8JX201349K080112R\",\r\n    \"intent\": \"CAPTURE\",\r\n    \"status\": \"COMPLETED\",\r\n    \"purchase_units\": [\r\n        {\r\n            \"reference_id\": \"default\",\r\n            \"amount\": {\r\n                \"currency_code\": \"USD\",\r\n                \"value\": \"33.80\"\r\n            },\r\n            \"payee\": {\r\n                \"email_address\": \"nihashopbd@gmail.com\",\r\n                \"merchant_id\": \"DASGRTTFEWFE4\"\r\n            },\r\n            \"shipping\": {\r\n                \"name\": {\r\n                    \"full_name\": \"John Doe\"\r\n                },\r\n                \"address\": {\r\n                    \"address_line_1\": \"1 Main St\",\r\n                    \"admin_area_2\": \"San Jose\",\r\n                    \"admin_area_1\": \"CA\",\r\n                    \"postal_code\": \"95131\",\r\n                    \"country_code\": \"US\"\r\n                }\r\n            },\r\n            \"payments\": {\r\n                \"captures\": [\r\n                    {\r\n                        \"id\": \"5PY16875RR247663L\",\r\n                        \"status\": \"COMPLETED\",\r\n                        \"amount\": {\r\n                            \"currency_code\": \"USD\",\r\n                            \"value\": \"33.80\"\r\n                        },\r\n                        \"final_capture\": true,\r\n                        \"seller_protection\": {\r\n                            \"status\": \"ELIGIBLE\",\r\n                            \"dispute_categories\": [\r\n                                \"ITEM_NOT_RECEIVED\",\r\n                                \"UNAUTHORIZED_TRANSACTION\"\r\n                            ]\r\n                        },\r\n                        \"create_time\": \"2024-04-24T16:11:34Z\",\r\n                        \"update_time\": \"2024-04-24T16:11:34Z\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    ],\r\n    \"payer\": {\r\n        \"name\": {\r\n            \"given_name\": \"John\",\r\n            \"surname\": \"Doe\"\r\n        },\r\n        \"email_address\": \"sabbir421@gmail.com\",\r\n        \"payer_id\": \"WK86LZG6XDMW6\",\r\n        \"address\": {\r\n            \"country_code\": \"US\"\r\n        }\r\n    },\r\n    \"create_time\": \"2024-04-24T16:09:08Z\",\r\n    \"update_time\": \"2024-04-24T16:11:34Z\",\r\n    \"links\": [\r\n        {\r\n            \"href\": \"https://api.sandbox.paypal.com/v2/checkout/orders/8JX201349K080112R\",\r\n            \"rel\": \"self\",\r\n            \"method\": \"GET\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://nihashopbd.pythonanywhere.com/api/orders/109/pay/",
+									"protocol": "https",
+									"host": [
+										"nihashopbd",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"api",
+										"orders",
+										"109",
+										"pay",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OrderDetails",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0Mzk0MDMwLCJpYXQiOjE3MTM5NjIwMzAsImp0aSI6ImUzOWQ0NDRhNmMxMDQyMTZhNTVjNjM3NzAwY2Q2OTMwIiwidXNlcl9pZCI6Mzh9.Sdgz7ivVAm2NiGP1NPf8mg0xpmmKQOaJx3JAoVx9bIk",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://nihashopbd.pythonanywhere.com/api/orders/109/",
+									"protocol": "https",
+									"host": [
+										"nihashopbd",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"api",
+										"orders",
+										"109",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ClickRefresh",
+			"item": [
+				{
+					"name": "enjson",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "content-all.css",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "products",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Review",
+			"item": [
+				{
+					"name": "review",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0Mzk0MDMwLCJpYXQiOjE3MTM5NjIwMzAsImp0aSI6ImUzOWQ0NDRhNmMxMDQyMTZhNTVjNjM3NzAwY2Q2OTMwIiwidXNlcl9pZCI6Mzh9.Sdgz7ivVAm2NiGP1NPf8mg0xpmmKQOaJx3JAoVx9bIk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": 70,\r\n    \"rating\": 5,\r\n    \"comment\": \"gdffdd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://nihashopbd.pythonanywhere.com/api/products/71/review/",
+							"protocol": "https",
+							"host": [
+								"nihashopbd",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"71",
+								"review",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"item": [
+				{
+					"name": "SearchLaptop",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0Mzk0MDMwLCJpYXQiOjE3MTM5NjIwMzAsImp0aSI6ImUzOWQ0NDRhNmMxMDQyMTZhNTVjNjM3NzAwY2Q2OTMwIiwidXNlcl9pZCI6Mzh9.Sdgz7ivVAm2NiGP1NPf8mg0xpmmKQOaJx3JAoVx9bIk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"searchText\": \"laptop\",\r\n    \"page\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://nihashopbd.pythonanywhere.com/api/products/",
+							"protocol": "https",
+							"host": [
+								"nihashopbd",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
